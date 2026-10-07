@@ -14,7 +14,7 @@ Prueba con: `-1`, `0`, `4.99`, `5`, `7`, `8.99`, `9`, `10`, `11`.
 
 */
 
-let nota = 11;
+let nota = a;
 
 if (nota < 0 || nota > 10) {
     console.log("Nota no válida");
