@@ -1,0 +1,15 @@
+{
+  "name": "gimnasio",
+  "version": "1.0.0",
+  "description": "Ejercicio simple de gimnasio con arrays",
+  "license": "ISC",
+  "author": "Juan Antonio",
+  "type": "module",
+  "main": "src/rutina.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
