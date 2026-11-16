@@ -1,9 +1,10 @@
-# Arquitectura de un API Rest con node.
+# Arquitectura de un API REST con node.
 
-API REST de una
+API REST de una veterinaria construida con Node.js, Express 5 y MySQL.
 
-# Estructura de carpetas 
+## Estructura de carpetas
 
+```
 2_api_veterinaria/
 ├── index.js                      # Crea el servidor HTTP y escucha en PORT
 ├── package.json
@@ -30,7 +31,7 @@ API REST de una
         └── usuarios.model.js        # Consultas SQL de usuario
 ```
 
-# Patrón de arquitectura
+# Patrón de arquitectura (sistema de carpetas)
 
 Arquitectura **por capas, al estilo MVC sin vistas**. Cada carpeta tiene una única responsabilidad y una capa solo habla con la siguiente.
 
@@ -53,8 +54,8 @@ Cliente → index.js → app.js → routes → middlewares → controllers → m
 
 | Método | Ruta | Acceso |
 |--------|------|--------|
-| GET | `/api/mascotas` |
-| GET | `/api/mascotas/:idMascota` |
+| GET | `/api/mascotas` | 
+| GET | `/api/mascotas/:idMascota` | 
 
 
 ## Modelo de datos
