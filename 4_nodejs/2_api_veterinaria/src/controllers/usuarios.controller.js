@@ -6,6 +6,10 @@ const getAllUsers = async (req, res) => {
     res.json(usuarios)
 }
 
+const getUserById = async (req, res) => {
+    const { id } = req.params;
+    const usuario = await selectUserById(id);
+    res.json(usuario);
+}
 
-
-export { getAllUsers }
+export { getAllUsers, getUserById }

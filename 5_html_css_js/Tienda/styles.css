@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* ---------- Cabecera ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #222;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #e63946;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ---------- Banner de portada ---------- */
+.portada {
+    height: 300px;
+    padding: 0 20px;
+    background-image: url("img/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.portada h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 30px;
+}
+
+.boton-producto {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 15px 15px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.boton-producto:hover {
+    background-color: #c92d3a;
+}
+
+/* ---------- Contenido principal ---------- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ---------- Productos ---------- */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.producto h2 {
+    padding: 15px 15px 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.producto p {
+    padding: 0 15px 15px 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* ---------- Precios ---------- */
+.producto .precio {
+    font-size: 18px;
+    color: #111;
+}
+
+.producto .precio-oferta {
+    color: #e63946;
+}
+
+.precio-antiguo {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 6px;
+}
+
+/* ---------- Etiquetas ---------- */
+.etiqueta {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #111;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.etiqueta-oferta {
+    background-color: #e63946;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ---------- Responsive (siempre al final) ---------- */
+@media (min-width: 600px) {
+    .producto {
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .portada {
+        height: 400px;
+    } 
+}

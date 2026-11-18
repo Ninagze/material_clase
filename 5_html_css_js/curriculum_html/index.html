@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CV - Ana González</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Ana González</h1>
+        <p>Desarrolladora Web Junior</p>
+        <a href="email:anakarinagze@gmail.com">anakarinagze@gmail.com</a>
+        <a href="https://linkedin.com/in/tuusuario">LinkedIn</a>
+
+        <br />
+        <br />
+
+        
+
+        <h2 id="perfil">Perfil</h2>
+        <p>Estudiante de bootcamp con ganas de crecer en desarrollo web.</p>
+
+        <h2 id="experiencia">Experiencia</h2>
+        <ol>
+            <li>Puesto 1 - Empresa (2024-2025)</li>
+            <li>Puesto 2 - Empresa (2025-2026)</li>
+        </ol>
+
+        <h2 id="formacion">Formación</h2>
+        <ul>
+            <li>Bootcamp de Desarrollo Web - Upgrade Hub</li>
+            <li>Bootcamp de Analisis de Datos - Upgrade Hub</li>
+        </ul>
+
+        <h2 id="idiomas">Idiomas</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Idioma</th>
+                    <th>Nivel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Español</td>
+                    <td>Nativo</td>
+                </tr>
+                <tr>
+                    <td>Inglés</td>
+                    <td>B2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="contacto">Contacto</h2>
+        <p>Si estás interesado en mi perfil, no dudes en contactarme.</p>
+
+        <form method="POST">
+            
+
+            <label for="startInput">¿Desde cuándo necesitas incorporarme?</label> <br />
+            <input type="date" id="startInput" name="startdate" />
+            <br />
+
+            <label>Tipo de jornada</label> <br />
+            <label for="fullTime">Completa</label>
+            <input type="radio" checked="checked" name="workday" id="fullTime" value="Completa" />
+
+            <label for="partTime">Parcial</label>
+            <input type="radio" name="workday" id="partTime" value="Parcial" />
+            <br />
+            <br />
+
+            <label>Área del puesto</label> <br />
+            <label for="areaFront">Frontend</label>
+            <input type="checkbox" name="area[]" id="areaFront" value="Frontend" />
+
+            <label for="areaBack">Backend</label>
+            <input type="checkbox" name="area[]" id="areaBack" value="Backend" />
+
+            <label for="areaFull">Fullstack</label>
+            <input type="checkbox" name="area[]" id="areaFull" value="Fullstack" />
+            <br />
+            <br />
+
+            <label for="modeSelect">Modalidad</label>
+            <select id="modeSelect" name="mode">
+                <option>Presencial</option>
+                <option>Remoto</option>
+                <option>Híbrido</option>
+            </select>
+
+            <button>Enviar</button>
+        </form>
+    </body>
+</html>

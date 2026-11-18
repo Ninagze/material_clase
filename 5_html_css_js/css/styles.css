@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+  font-family: "ComicRelief";
+  src: url("Comic_Relief/ComicRelief-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p {
+    margin: 10px;
+    width: 150px;
+}

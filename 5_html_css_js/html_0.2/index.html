@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Mi primerita pagina</title>
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- 
+        Con la etiqueta style se pueden hacer estilos en la propia página
+        <style>
+            h2 {
+                color: green;
+            }
+        </style>
+        -->
+    </head>
+    
+    <body>
+        <a href="#miparrafo">Ir al parrafo de abajo</a>
+        <h1>Titulo h1</h1>
+        <h2>Titulo h2</h2>
+        <h3>Titulo h3</h3>
+        <h4>Titulo h4</h4>
+        <h5>Titulo h5</h5>
+        <h6>Titulo h6</h6>
+
+        <p>Hola soy un parrafo muy guay</p>
+        <p>Y yo otro</p>
+
+        hola hola hola
+        <br />
+        adios adios adios <span>adiosito span</span>
+        <br/> 
+
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ol>
+
+        <ul>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ul>
+
+        <a href="https://www.google.es">Google</a>
+
+        <a href="gatos.html">Ver gatos</a>
+
+<table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Paco Perez</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Luisa</td>
+                    <td>Gómez</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <br/>
+
+        <form method="POST">
+            <label for="nameInput">Nombre</label> <br/>
+            <input maxlength="5" type="text" id="nameInput" name="firstname" placeholder="Pedro" />
+            <br/>
+            
+            <label for="ageInput">Edad</label> <br/>
+            <input type="number" id="ageInput" name="age" />
+            <br/>
+
+            <label for="birthdayInput">Cumpleaños</label> <br/>
+            <input type="date" id="birthdayInput" name="birthday" />
+            <br/>
+
+            <label>Color favorito</label> <br/>
+            <label for="favoriteColorRed">Rojo</label>
+            <input type="radio" checked="checked" name="favoriteColor" id="favoriteColorRed" value="Rojo" />
+
+            <label for="favoriteColorBlue">Azul</label>
+            <input type="radio" name="favoriteColor" id="favoriteColorBlue" value="Azul" />
+
+            <label for="favoriteColorGreen">Verde</label>
+            <input type="radio" name="favoriteColor" id="favoriteColorGreen" value="Verde" />
+
+            <br/>
+            <br/>
+
+            <label>Animales que te gustan</label> <br/>
+            <label for="favoriteAnimalCat">Gato</label>
+            <input type="checkbox" name="favoriteAnimal[]" id="favoriteAnimalCat" value="Gato" />
+
+            <label for="favoriteAnimalDog">Perro</label>
+            <input type="checkbox" name="favoriteAnimal[]" id="favoriteAnimalDog" value="Perro" />
+
+            <label for="favoriteAnimalFrog">Rana</label>
+            <input type="checkbox" name="favoriteAnimal[]" id="favoriteAnimalFrog" value="Rana" />
+
+            <br/>
+            <br/>
+            
+            <label for="countrySelect">País</label>
+            <select id="countrySelect" name="country">
+                <option>Españita</option>
+                <option>Venezuela</option>
+                <option>Italia</option>
+                <option>Japón</option>
+            </select>
+
+            <button>Enviar</button>
+        </form>
+
+        <br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <p id="miparrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quis. Dolor corporis enim tempora dicta dolorem ducimus est! Sunt distinctio recusandae ipsa nobis libero excepturi ratione quas qui rem nisi?
+        </p>
+    </body>
+</html>
